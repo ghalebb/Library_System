@@ -5,11 +5,25 @@ from tabulate import tabulate
 
 
 class LibraryApp:
+    """
+    A command-line application for managing a library of books.
+
+    This application supports adding, removing, modifying, displaying,
+    and filtering books stored in a JSON file.
+    """
+
     def __init__(self):
+        """
+        Initializes the LibraryApp by loading the books from a JSON file.
+        """
         self.library = Library()
         self.library.load_from_file('library.json')
 
     def run(self):
+        """
+        Runs the command-line interface for the LibraryApp.
+        :return:
+        """
         parser = argparse.ArgumentParser(
             description="Library Management System")
         subparsers = parser.add_subparsers(dest='command')
@@ -40,11 +54,11 @@ class LibraryApp:
 
         # Display books command
         subparsers.add_parser('display',
-                                               help='Display all books')
+                              help='Display all books')
 
         # Save library command
         subparsers.add_parser('save',
-                                            help='Save library to file')
+                              help='Save library to file')
 
         # Filter books command
         filter_parser = subparsers.add_parser('filter',
@@ -70,33 +84,81 @@ class LibraryApp:
             parser.print_help()
 
     def add(self, title, author, publication_year, genre):
+        """
+        Adds a new book to the library.
+
+        Args:
+            title (str): Title of the book.
+            author (str): Author of the book.
+            publication_year (int): Year the book was published.
+            genre (str): Genre of the book.
+        """
         self.library.add_book(title, author, publication_year, genre)
         self.library.save_to_file('library.json')
 
     def remove(self, title):
+        """
+        Removes a book from the library.
+
+        Args:
+            title (str): Title of the book to remove.
+        """
         print(self.library.remove_book(title))
         self.library.save_to_file('library.json')
 
     def display(self):
+        """
+        Displays all books in the library.
+        """
         self.display_books()
 
     def modify(self, title, modification, value):
+        """
+        Modifies an attribute of a book.
+
+        Args:
+            title (str): Title of the book to modify.
+            modification (str): Attribute of the book to modify.
+            value (str): New value for the attribute.
+        """
         self.library.modify_book(title, modification, value)
         self.library.save_to_file('library.json')
 
     def save(self):
+        """
+        Saves the current state of the library to the JSON file.
+        """
         self.library.save_to_file('library.json')
         print("Library saved.")
 
     def filter(self, filter_type, value):
+        """
+        Filters books by specified attribute.
+
+        Args:
+            filter_type (str): Attribute to filter by ('genre' or 'author').
+            value (str): Value of the attribute to filter by.
+        """
         books = self.library.filter_books(filter_type, value)
         if books is not None:
             self.display_books(books)
 
     def find(self, title):
+        """
+        Finds a book by title.
+
+        Args:
+            title (str): Title of the book to find.
+        """
         print(self.library.find_book(title))
 
     def display_books(self, books_to_display=None):
+        """
+        Displays books in a formatted table.
+
+        Args: books_to_display (list, optional): A list of books to display.
+        Defaults to displaying all books.
+        """
         books = self.library.display_books(books_to_display)
         if len(books) == 0:
             print("No Books to Display")

@@ -47,8 +47,8 @@ class Library:
         Args:
             title (str): The title of the book to remove.
 
-        Returns:
-            str: A message indicating whether the book was removed or not found.
+        Returns: str: A message indicating whether the book was removed or
+        not found.
         """
         title = title.title()
         if title in self.books:
@@ -73,8 +73,8 @@ class Library:
         """
         Displays a list of books in the library.
 
-        Args:
-            books_to_display (list, optional): A list of books to display. Defaults to displaying all books.
+        Args: books_to_display (list, optional): A list of books to display.
+        Defaults to displaying all books.
 
         Returns:
             list: A list of books.
@@ -129,8 +129,8 @@ class Library:
         """
         Saves the current list of books to a file.
 
-        Args:
-            file_path (str): The path to the file where the library will be saved.
+        Args: file_path (str): The path to the file where the library will
+        be saved.
         """
         with open(file_path, 'w') as file:
             json.dump([book.__dict__ for book in self.books.values()], file)
