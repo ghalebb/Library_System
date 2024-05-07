@@ -25,9 +25,9 @@ class Book:
             genre (str): The genre of the book.
         """
         self.title = title.title()
-        self.author = author
+        self.author = author.title()
         self.publication_year = publication_year
-        self.genre = genre
+        self.genre = genre.title()
 
     def __str__(self):
         """

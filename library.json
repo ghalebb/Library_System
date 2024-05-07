@@ -1,1 +1,30 @@
-[{"title": "Dune", "author": "Frank Herbert", "publication_year": "1945", "genre": "Sci-Fi"}, {"title": "Normal People", "author": "Sally Rooney", "publication_year": 2018, "genre": "Romance"}, {"title": "Dune Messiah", "author": "Frank Herbert", "publication_year": 1969, "genre": "Sci-Fi"}, {"title": "Children Of Dune", "author": "Frank Herbert", "publication_year": 1976, "genre": "Sci-Fi"}, {"title": "Heretics Of Dune", "author": "Frank Herbert", "publication_year": 1984, "genre": "Sci-Fi"}, {"title": "Chapterhouse: Dune", "author": "Frank Herbert", "publication_year": 1985, "genre": "Sci-Fi"}, {"title": "21 Lessons For The 21St Century", "author": "Yuval Noah Harari", "publication_year": 2018, "genre": "Non-Fiction"}, {"title": "1984", "author": "George Orwell", "publication_year": 1949, "genre": "Political Fiction"}, {"title": "Denkbilder", "author": "Walter Benjamin", "publication_year": 1973, "genre": "non-fiction"}]
+[{"title": "Dune", "author": "Frank Herbert", "publication_year": "1945", "genre": "Sci-Fi"}, {"title": "Normal People", "author": "Sally Rooney", "publication_year": 2018, "genre": "Romance"}, {"title": "Dune Messiah", "author": "Frank Herbert", "publication_year": 1969, "genre": "Sci-Fi"}, {"title": "Children Of Dune", "author": "Frank Herbert", "publication_year": 1976, "genre": "Sci-Fi"}, {"title": "Heretics Of Dune", "author": "Frank Herbert", "publication_year": 1984, "genre": "Sci-Fi"}, {"title": "Chapterhouse: Dune", "author": "Frank Herbert", "publication_year": 1985, "genre": "Sci-Fi"}, {"title": "21 Lessons For The 21St Century", "author": "Yuval Noah Harari", "publication_year": 2018, "genre": "Non-Fiction"}, {"title": "1984", "author": "George Orwell", "publication_year": 1949, "genre": "Political Fiction"}, {"title": "Denkbilder", "author": "Walter Benjamin", "publication_year": 1973, "genre": "Non-Fiction"}, {"title": "Die Physiker", "author": "Duerrenmatt", "publication_year": 1980, "genre": "Comedy"},  {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "publication_year": 1925,
+        "genre": "Classics"
+    },
+    {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "publication_year": 1813,
+        "genre": "Romance"
+    },
+    {
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "publication_year": 1932,
+        "genre": "Dystopian"
+    },
+    {
+        "title": "Catch-22",
+        "author": "Joseph Heller",
+        "publication_year": 1961,
+        "genre": "Satire"
+    },
+    {
+        "title": "Animal Farm",
+        "author": "George Orwell",
+        "publication_year": 1945,
+        "genre": "Political Satire"
+    }]
